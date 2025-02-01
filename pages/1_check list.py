@@ -72,7 +72,7 @@ try:
         with open('homework_list.txt', 'w', encoding='utf-8') as file:
             file.writelines(updated_list)
 
-        st.success("チェックされたアイテムが削除されました。")
+        st.success("チェックされたアイテムが削除されました。もう一度チェックマークを押してください。")
 
 except FileNotFoundError:
     # ファイルが見つからない場合のエラーハンドリング
