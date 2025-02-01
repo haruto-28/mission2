@@ -2,7 +2,7 @@ import streamlit as st
 
 # タイトルと説明
 st.title("BMI計算アプリ")
-st.write("身長と体重を入力してBMIを計算しましょう。")
+st.write("身長と体重を入力してBMIを計算します。")
 
 # ユーザー入力
 height = st.number_input("身長 (cm)", min_value=50.0, max_value=250.0, value=170.0, step=0.1)
