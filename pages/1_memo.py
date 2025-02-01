@@ -21,11 +21,11 @@ def load_homework_list(file_name="homework_list.txt"):
 try:
     # ファイルを読み込む
     homework_list = load_homework_list("homework_list.txt")
-    st.write("宿題リストを読み込みました。")
+    st.write("リストを読み込みました。")
 
     # 宿題リストの表示
     for homework_item in homework_list:
         st.checkbox(homework_item.strip(), key=homework_item.strip())
 except FileNotFoundError:
     # ファイルが見つからない場合のエラーハンドリング
-    st.error("宿題リストファイルが見つかりません。")
+    st.error("リストのファイルが見つかりません。")
