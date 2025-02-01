@@ -1,5 +1,4 @@
 import streamlit as st
-import streamlit as st
 
 # タイトルと説明
 st.title("BMI計算アプリ")
@@ -21,12 +20,8 @@ if height > 0 and weight > 0:
     elif 18.5 <= bmi < 25:
         st.write("BMIカテゴリ: 普通体重")
     elif 25 <= bmi < 30:
-        st.write("BMIカテゴリ: 肥満（1度）")
+        st.write("BMIカテゴリ: 肥満 (1度)")
     elif 30 <= bmi < 35:
-        st.write("BMIカテゴリ: 肥満（2度）")
+        st.write("BMIカテゴリ: 肥満 (2度)")
     else:
-        st.write("BMIカテゴリ: 肥満（3度）")
-
-# アプリの実行
-if __name__ == "__main__":
-    st.run()
+        st.write("BMIカテゴリ: 肥満 (3度)")
